@@ -57,7 +57,6 @@ PHP based Chatbox from *UltraStudioLTD*
 ![GitHub followers](https://img.shields.io/github/followers/UltraStudioLTD?label=Follow&style=social)
 ![GitHub forks](https://img.shields.io/github/forks/UltraStudioLTD/ChatBoxPHP?label=Fork&style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/UltraStudioLTD/ChatBoxPHP?style=social)
-![GitHub User's stars](https://img.shields.io/github/stars/UltraStudioLTD?affiliations=OWNER&style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/UltraStudioLTD/ChatBoxPHP?label=Watch&style=social)
 
 <img src="https://www.php.net/images/logos/new-php-logo.svg" width="250"/>
