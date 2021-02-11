@@ -33,6 +33,12 @@ a:hover {
 
 #loginform,
 #wrapper {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0 auto;
   padding-bottom: 25px;
   background: #eee;
@@ -58,7 +64,7 @@ a:hover {
   padding: 10px;
   background: #fff;
   height: 300px;
-  width: 530px;
+  width: auto;
   border: 1px solid #a7a7a7;
   overflow: auto;
   border-radius: 4px;
