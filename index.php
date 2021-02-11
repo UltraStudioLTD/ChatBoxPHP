@@ -104,7 +104,7 @@ function loginForm(){
                         url: "log.html",
                         cache: false,
                         success: function (html) {
-                            $("#chatbox").html(html); //Insert chat log into the #chatbox div
+                            $("#chatbox").html(atob(html)); //Insert chat log into the #chatbox div
  
                             //Auto-scroll           
                             var newscrollHeight = $("#chatbox")[0].scrollHeight - 20; //Scroll height after the request
