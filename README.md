@@ -9,5 +9,4 @@ PHP based Chatbox
 ![Code Climate maintainability-percentage](https://img.shields.io/codeclimate/maintainability-percentage/UltraStudioLTD/ChatBoxPHP?logo=code-climate)
 ![Code Climate issues](https://img.shields.io/codeclimate/issues/UltraStudioLTD/ChatBoxPHP?logo=code-climate)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c710729615254d2396ef4dfc939ae995)](https://app.codacy.com/gh/UltraStudioLTD/ChatBoxPHP?utm_source=github.com&utm_medium=referral&utm_content=UltraStudioLTD/ChatBoxPHP&utm_campaign=Badge_Grade)
-
-Creates Custom Badges using [Shields.io](https://shields.io/)'s Open-Source library.
+[![Gitter](https://badges.gitter.im/ChatBoxPHP/community.svg)](https://gitter.im/ChatBoxPHP/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
