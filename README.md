@@ -33,10 +33,10 @@ PHP based Chatbox from *UltraStudioLTD*
   - [ ] Adding Encryption [Planned]
   - [ ] Adding Authentication [Planned]
 
-<a href="https://chatboxphp.herokuapp.com/"><img src="https://simpleicons.org/icons/repl-dot-it.svg" width="50"/></a>
-[Link for Application on Repl.it](https://chatboxphp-current.ultrastudioltd.repl.co/)
-[Link for Repository on Repl.it](https://repl.it/@UltraStudioLTD/ChatBoxPHP-CURRENT)
-[Link for Repository on Github](https://github.com/UltraStudioLTD/ChatBoxPHP.git/)
+<a href="https://chatboxphp.herokuapp.com/"><img src="https://simpleicons.org/icons/heroku.svg" width="50"/></a>
+<a href="https://repl.it/@UltraStudioLTD/ChatBoxPHP-CURRENT/"><img src="https://simpleicons.org/icons/repl-dot-it.svg" width="50"/></a>
+<a href="https://chatboxphp-current.ultrastudioltd.repl.co/"><img src="https://simpleicons.org/icons/repl-dot-it.svg" width="50"/></a>
+<a href="https://github.com/UltraStudioLTD/ChatBoxPHP.git/"><img src="https://simpleicons.org/icons/github.svg" width="50"/></a>
 
 
 ![GitHub](https://img.shields.io/github/license/UltraStudioLTD/ChatBoxPHP?logo=gnu)
