@@ -2,30 +2,36 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 20px auto;
   font-family: "Lato";
   font-weight: 300;
   background-color: gray;
 }
+
 form {
   padding: 15px 25px;
   display: flex;
   gap: 10px;
   justify-content: center;
 }
+
 #loginform p,
 form label {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 a {
   color: #00f;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 #loginform,
 #wrapper {
   margin: 0 auto;
@@ -36,14 +42,17 @@ a:hover {
   border: 2px solid #212121;
   border-radius: 4px;
 }
+
 #loginform {
   padding-top: 18px;
   text-align: center;
 }
+
 #loginform p {
   padding: 15px 25px;
   font-size: 1.4rem;
 }
+
 #chatbox {
   text-align: left;
   margin: 0 auto 25px;
@@ -56,23 +65,28 @@ a:hover {
   border-radius: 4px;
   border-bottom: 4px solid #a7a7a7;
 }
+
 #name,
 #usermsg {
   border-radius: 4px;
   border: 1px solid #ff9800;
 }
+
 #usermsg {
   flex: 1;
 }
+
 #name {
   padding: 2px 8px;
 }
+
 #enter,
 #submitmsg,
 a#exit {
   border-radius: 4px;
   font-weight: 700;
 }
+
 #enter,
 #submitmsg {
   background: #ff9800;
@@ -80,32 +94,40 @@ a#exit {
   color: #fff;
   padding: 4px 10px;
 }
+
 .error {
   color: red;
 }
+
 #menu {
   padding: 15px 25px;
   display: flex;
 }
+
 #menu p.welcome {
   flex: 1;
 }
+
 a#exit {
   background: #c62828;
   padding: 4px 8px;
 }
+
 .msgln {
   margin: 0 0 5px;
 }
+
 .msgln span.join-info,
 .msgln span.left-info,
 a#exit {
   color: #fff;
 }
+
 .msgln span.chat-time {
   color: gold;
   vertical-align: super;
 }
+
 .msgln b.user-name-join,
 .msgln b.user-name-left {
   font-weight: 700;
@@ -115,9 +137,11 @@ a#exit {
   border-radius: 4px;
   margin: 0 5px 0 0;
 }
+
 .msgln b.user-name-left {
   background: red;
 }
+
 .msgln b.user-name-join {
   background: #1eff00;
 }
