@@ -12,3 +12,9 @@ PHP based Chatbox
 ![Code Climate issues](https://img.shields.io/codeclimate/issues/UltraStudioLTD/ChatBoxPHP?logo=code-climate)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c710729615254d2396ef4dfc939ae995)](https://app.codacy.com/gh/UltraStudioLTD/ChatBoxPHP?utm_source=github.com&utm_medium=referral&utm_content=UltraStudioLTD/ChatBoxPHP&utm_campaign=Badge_Grade)
 [![Gitter](https://img.shields.io/gitter/room/UltraStudioLTD/ChatBoxPHP?logo=gitter)](https://gitter.im/ChatBoxPHP/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+![GitHub followers](https://img.shields.io/github/followers/UltraStudioLTD?label=Follow&style=social)
+![GitHub forks](https://img.shields.io/github/forks/UltraStudioLTD/ChatBoxPHP?label=Fork&style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/UltraStudioLTD/ChatBoxPHP?style=social)
+![GitHub User's stars](https://img.shields.io/github/stars/UltraStudioLTD?affiliations=OWNER&style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/UltraStudioLTD/ChatBoxPHP?label=Watch&style=social)
