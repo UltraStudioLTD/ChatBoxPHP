@@ -13,6 +13,7 @@ PHP based Chatbox
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c710729615254d2396ef4dfc939ae995)](https://app.codacy.com/gh/UltraStudioLTD/ChatBoxPHP?utm_source=github.com&utm_medium=referral&utm_content=UltraStudioLTD/ChatBoxPHP&utm_campaign=Badge_Grade)
 [![Gitter](https://img.shields.io/gitter/room/UltraStudioLTD/ChatBoxPHP?logo=gitter)](https://gitter.im/ChatBoxPHP/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 ![Website](https://img.shields.io/website?down_color=red&down_message=Offline&logo=Heroku&up_color=green&up_message=Online&url=https%3A%2F%2Fchatboxphp.herokuapp.com%2F)
+![Security Headers](https://img.shields.io/security-headers?logo=Heroku&url=https%3A%2F%2Fchatboxphp.herokuapp.com%2F)
 
 ![GitHub followers](https://img.shields.io/github/followers/UltraStudioLTD?label=Follow&style=social)
 ![GitHub forks](https://img.shields.io/github/forks/UltraStudioLTD/ChatBoxPHP?label=Fork&style=social)
