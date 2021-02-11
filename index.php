@@ -11,7 +11,7 @@ if(isset($_GET['logout'])){
     //Simple exit message
     date_default_timezone_set('UTC');
     $logout_message = "<div class='msgln'>⇒⇒ <span class='chat-time'>".date("Y-m-d H:i:s")."</span> ➥ <span class='left-info'><b class='user-name-left'>". $_SESSION['name'] ."</b> has left the chat session.</span><br></div>";
-    file_put_contents("log.html", base64_encode($logout_message), FILE_APPEND | LOCK_EX);
+    file_put_contents("log.html", $logout_message, FILE_APPEND | LOCK_EX);
      
     session_destroy();
     header("Location: index.php"); //Redirect the user
@@ -22,7 +22,7 @@ if(isset($_POST['enter'])){
         $_SESSION['name'] = stripslashes(htmlspecialchars($_POST['name']));
         date_default_timezone_set('UTC');
         $join_message = "<div class='msgln'>⇒⇒ <span class='chat-time' style='color: green'>".date("Y-m-d H:i:s")."</span> ➥ <span class='join-info'><b class='user-name-join'>". $_SESSION['name'] ."</b> has joined the chat session.</span><br></div>";
-        file_put_contents("log.html", base64_encode($join_message), FILE_APPEND | LOCK_EX);
+        file_put_contents("log.html", $join_message, FILE_APPEND | LOCK_EX);
     }
     else{
         echo '<span class="error">Please type in a name</span>';
