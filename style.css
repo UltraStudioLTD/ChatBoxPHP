@@ -1,2 +1,134 @@
-*{margin:0;padding:0}body{margin:20px auto;font-family:"Lato";font-weight:300;background-color:gray}form{padding:15px 25px;display:flex;gap:10px;justify-content:center}#loginform p,form label{font-size:1.5rem;font-weight:700}a{color:#00f;text-decoration:none}a:hover{text-decoration:underline}#loginform,#wrapper{margin:0 auto;padding-bottom:25px;background:#eee;width:600px;max-width:100%;border:2px solid #212121;border-radius:4px}#loginform{padding-top:18px;text-align:center}#loginform p{padding:15px 25px;font-size:1.4rem}#chatbox{text-align:left;margin:0 auto 25px;padding:10px;background:#fff;height:300px;width:530px;border:1px solid #a7a7a7;overflow:auto;border-radius:4px;border-bottom:4px solid #a7a7a7}#name,#usermsg{border-radius:4px;border:1px solid #ff9800}#usermsg{flex:1}#name{padding:2px 8px}#enter,#submitmsg,a#exit{border-radius:4px;font-weight:700}#enter,#submitmsg{background:#ff9800;border:2px solid #e65100;color:#fff;padding:4px 10px}.error{color:red}#menu{padding:15px 25px;display:flex}#menu p.welcome{flex:1}a#exit{background:#c62828;padding:4px 8px}.msgln{margin:0 0 5px}.msgln span.join-info,.msgln span.left-info,a#exit{color:#fff}.msgln span.chat-time{color:gold;vertical-align:super}.msgln b.user-name-join,.msgln b.user-name-left{font-weight:700;color:#fff;padding:2px 4px;font-size:90%;border-radius:4px;margin:0 5px 0 0}.msgln b.user-name-left{background:red}.msgln b.user-name-join{background:#1eff00}
-/*# sourceMappingURL=application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjx1bmtub3duPiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxDLENBQ0ksUSxDQUNBLFMsQ0FFSixJLENBQ0ksZ0IsQ0FDQSxrQixDQUNBLGUsQ0FDQSxxQixDQUVKLEksQ0FDSSxpQixDQUNBLFksQ0FDQSxRLENBQ0Esc0IsQ0EyQkosWSxDQXpCQSxVLENBQ0ksZ0IsQ0FDQSxlLENBRUosQyxDQUNJLFUsQ0FDQSxvQixDQUVKLE8sQ0FDSSx5QixDQUdKLFUsQ0FEQSxRLENBRUksYSxDQUNBLG1CLENBQ0EsZSxDQUNBLFcsQ0FDQSxjLENBQ0Esd0IsQ0FDQSxpQixDQUVKLFUsQ0FDSSxnQixDQUNBLGlCLENBRUosWSxDQUNJLGlCLENBQ0EsZ0IsQ0FJSixRLENBQ0ksZSxDQUVBLGtCLENBQ0EsWSxDQUNBLGUsQ0FDQSxZLENBQ0EsVyxDQUNBLHdCLENBQ0EsYSxDQUNBLGlCLENBQ0EsK0IsQ0FPSixLLENBTEEsUSxDQU1JLGlCLENBQ0Esd0IsQ0FQSixRLENBQ0ksTSxDQUlKLEssQ0FHSSxlLENBR0osTSxDQURBLFUsQ0FtQkEsTSxDQUlJLGlCLENBQ0EsZSxDQXZCSixNLENBREEsVSxDQUVJLGtCLENBQ0Esd0IsQ0FDQSxVLENBQ0EsZ0IsQ0FJSixNLENBQ0ksUyxDQUVKLEssQ0FDSSxpQixDQUNBLFksQ0FFSixlLENBQ0ksTSxDQUVKLE0sQ0FFSSxrQixDQUNBLGUsQ0FJSixNLENBQ0ksYyxDQUdKLHFCLENBREEscUIsQ0FWQSxNLENBWUksVSxDQUVKLHFCLENBQ0ksVSxDQUNBLG9CLENBb0JKLHVCLENBVEEsdUIsQ0FVSSxlLENBRUEsVSxDQUNBLGUsQ0FDQSxhLENBQ0EsaUIsQ0FDQSxnQixDQWhCSix1QixDQUVJLGMsQ0FPSix1QixDQUVJLGtCIiwiZmlsZSI6Ijx1bmtub3duPiIsInNvdXJjZXNDb250ZW50IjpbIioge1xuICAgIG1hcmdpbjogMDtcbiAgICBwYWRkaW5nOiAwO1xufVxuYm9keSB7XG4gICAgbWFyZ2luOiAyMHB4IGF1dG87XG4gICAgZm9udC1mYW1pbHk6IFwiTGF0b1wiO1xuICAgIGZvbnQtd2VpZ2h0OiAzMDA7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JheTtcbn1cbmZvcm0ge1xuICAgIHBhZGRpbmc6IDE1cHggMjVweDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGdhcDogMTBweDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbmZvcm0gbGFiZWwge1xuICAgIGZvbnQtc2l6ZTogMS41cmVtO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuYSB7XG4gICAgY29sb3I6ICMwMDAwZmY7XG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuYTpob3ZlciB7XG4gICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG59XG4jd3JhcHBlcixcbiNsb2dpbmZvcm0ge1xuICAgIG1hcmdpbjogMCBhdXRvO1xuICAgIHBhZGRpbmctYm90dG9tOiAyNXB4O1xuICAgIGJhY2tncm91bmQ6ICNlZWU7XG4gICAgd2lkdGg6IDYwMHB4O1xuICAgIG1heC13aWR0aDogMTAwJTtcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjMjEyMTIxO1xuICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbn1cbiNsb2dpbmZvcm0ge1xuICAgIHBhZGRpbmctdG9wOiAxOHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbiNsb2dpbmZvcm0gcCB7XG4gICAgcGFkZGluZzogMTVweCAyNXB4O1xuICAgIGZvbnQtc2l6ZTogMS40cmVtO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG4jY2hhdGJveCB7XG4gICAgdGV4dC1hbGlnbjogbGVmdDtcbiAgICBtYXJnaW46IDAgYXV0bztcbiAgICBtYXJnaW4tYm90dG9tOiAyNXB4O1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgYmFja2dyb3VuZDogd2hpdGU7XG4gICAgaGVpZ2h0OiAzMDBweDtcbiAgICB3aWR0aDogNTMwcHg7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI2E3YTdhNztcbiAgICBvdmVyZmxvdzogYXV0bztcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgYm9yZGVyLWJvdHRvbTogNHB4IHNvbGlkICNhN2E3YTc7XG59XG4jdXNlcm1zZyB7XG4gICAgZmxleDogMTtcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI2ZmOTgwMDtcbn1cbiNuYW1lIHtcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI2ZmOTgwMDtcbiAgICBwYWRkaW5nOiAycHggOHB4O1xufVxuI3N1Ym1pdG1zZyxcbiNlbnRlciB7XG4gICAgYmFja2dyb3VuZDogI2ZmOTgwMDtcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjZTY1MTAwO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiA0cHggMTBweDtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XG59XG4uZXJyb3Ige1xuICAgIGNvbG9yOiAjZmYwMDAwO1xufVxuI21lbnUge1xuICAgIHBhZGRpbmc6IDE1cHggMjVweDtcbiAgICBkaXNwbGF5OiBmbGV4O1xufVxuI21lbnUgcC53ZWxjb21lIHtcbiAgICBmbGV4OiAxO1xufVxuYSNleGl0IHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYmFja2dyb3VuZDogI2M2MjgyODtcbiAgICBwYWRkaW5nOiA0cHggOHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbn1cbi5tc2dsbiB7XG4gICAgbWFyZ2luOiAwIDAgNXB4IDA7XG59XG4ubXNnbG4gc3Bhbi5sZWZ0LWluZm8sXG4ubXNnbG4gc3Bhbi5qb2luLWluZm8ge1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cbi5tc2dsbiBzcGFuLmNoYXQtdGltZSB7XG4gICAgY29sb3I6IGdvbGQ7XG4gICAgdmVydGljYWwtYWxpZ246IHN1cGVyO1xufVxuLm1zZ2xuIGIudXNlci1uYW1lLCB7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgYmFja2dyb3VuZDogYmxhY2s7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDJweCA0cHg7XG4gICAgZm9udC1zaXplOiA5MCU7XG4gICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgIG1hcmdpbjogMCA1cHggMCAwO1xufVxuLm1zZ2xuIGIudXNlci1uYW1lLWxlZnQge1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGJhY2tncm91bmQ6IHJnYigyNTUsIDAsIDApO1xuICAgIGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7XG4gICAgcGFkZGluZzogMnB4IDRweDtcbiAgICBmb250LXNpemU6IDkwJTtcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgbWFyZ2luOiAwIDVweCAwIDA7XG59XG4ubXNnbG4gYi51c2VyLW5hbWUtam9pbiB7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgYmFja2dyb3VuZDogcmdiKDMwLCAyNTUsIDApO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAycHggNHB4O1xuICAgIGZvbnQtc2l6ZTogOTAlO1xuICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICBtYXJnaW46IDAgNXB4IDAgMDtcbn0iXX0= */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 20px auto;
+    font-family: "Lato";
+    font-weight: 300;
+    background-color: gray;
+}
+form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+a {
+    color: #0000ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#wrapper,
+#loginform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+}
+#loginform {
+    padding-top: 18px;
+    text-align: center;
+}
+#loginform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: white;
+    height: 300px;
+    width: 530px;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+}
+#usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+}
+#name {
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+    padding: 2px 8px;
+}
+#submitmsg,
+#enter {
+    background: #ff9800;
+    border: 2px solid #e65100;
+    color: white;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.error {
+    color: #ff0000;
+}
+#menu {
+    padding: 15px 25px;
+    display: flex;
+}
+#menu p.welcome {
+    flex: 1;
+}
+a#exit {
+    color: white;
+    background: #c62828;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.msgln {
+    margin: 0 0 5px 0;
+}
+.msgln span.left-info,
+.msgln span.join-info {
+    color: white;
+}
+.msgln span.chat-time {
+    color: gold;
+    vertical-align: super;
+}
+.msgln b.user-name, {
+    font-weight: bold;
+    background: black;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+}
+.msgln b.user-name-left {
+    font-weight: bold;
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+}
+.msgln b.user-name-join {
+    font-weight: bold;
+    background: rgb(30, 255, 0);
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+}
