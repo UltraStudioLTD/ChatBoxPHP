@@ -1,5 +1,43 @@
 # ChatBoxPHP
-PHP based Chatbox
+
+PHP based Chatbox from *UltraStudioLTD*
+
+
+> Please Note that Currently I don't have any Encryption method implemented and
+> Project is still in building process.
+> I won't be responsible for any damage caused by Application So use it with your own risk!
+> Please remember, that I am will continue improving Project when I will have free time.
+
+# Current Features
+
+  - [x] Desktop only
+  - [x] Online Web Application
+  - [x] 1 Room for Chatting
+  - [x] Colored Join/Post/Exit messages
+  - [x] No registration
+
+
+# Planned Features
+
+  - [ ] Optimisation for Mobile Phones [In Building]
+  - [ ] Improving Designs [In Building]
+  - [ ] Make application faster [In Building]
+  - [ ] Adding more Rooms [Planned]
+  - [ ] Adding Customization [Planned]
+  - [ ] Adding Voice Messages [Planned]
+  - [ ] Adding Media (Images, GIF, Videos) Messages [Planned]
+  - [ ] Adding Voice Chat [Planned]
+  - [ ] Adding Video Chat [Planned]
+  - [ ] Adding Private Chat [Planned]
+  - [ ] Adding Secret Conversation [Planned]
+  - [ ] Adding Encryption [Planned]
+  - [ ] Adding Authentication [Planned]
+
+<img src="https://simpleicons.org/icons/repl-dot-it.svg" width="50" />
+[Link for Application on Heroku](https://chatboxphp.herokuapp.com/)
+[Link for Application on Repl.it](https://chatboxphp-current.ultrastudioltd.repl.co/)
+[Link for Repository on Repl.it](https://repl.it/@UltraStudioLTD/ChatBoxPHP-CURRENT)
+[Link for Repository on Github](https://github.com/UltraStudioLTD/ChatBoxPHP.git/)
 
 
 ![GitHub](https://img.shields.io/github/license/UltraStudioLTD/ChatBoxPHP?logo=gnu)
@@ -22,3 +60,6 @@ PHP based Chatbox
 ![GitHub Repo stars](https://img.shields.io/github/stars/UltraStudioLTD/ChatBoxPHP?style=social)
 ![GitHub User's stars](https://img.shields.io/github/stars/UltraStudioLTD?affiliations=OWNER&style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/UltraStudioLTD/ChatBoxPHP?label=Watch&style=social)
+
+![PHP](https://www.php.net/images/logos/new-php-logo.svg)
+![HEROKU](https://cdn.worldvectorlogo.com/logos/heroku.svg)
