@@ -1,0 +1,2 @@
+# ChatBoxPHP
+PHP based Chatbox
