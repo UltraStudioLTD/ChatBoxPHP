@@ -1,30 +1,30 @@
 * {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 body {
   margin: 20px auto;
   font-family: "Lato";
   font-weight: 300;
-  background-color: gray
+  background-color: gray;
 }
 form {
   padding: 15px 25px;
   display: flex;
   gap: 10px;
-  justify-content: center
+  justify-content: center;
 }
 #loginform p,
 form label {
   font-size: 1.5rem;
-  font-weight: 700
+  font-weight: 700;
 }
 a {
   color: #00f;
-  text-decoration: none
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 #loginform,
 #wrapper {
@@ -34,15 +34,15 @@ a:hover {
   width: 600px;
   max-width: 100%;
   border: 2px solid #212121;
-  border-radius: 4px
+  border-radius: 4px;
 }
 #loginform {
   padding-top: 18px;
-  text-align: center
+  text-align: center;
 }
 #loginform p {
   padding: 15px 25px;
-  font-size: 1.4rem
+  font-size: 1.4rem;
 }
 #chatbox {
   text-align: left;
@@ -54,57 +54,57 @@ a:hover {
   border: 1px solid #a7a7a7;
   overflow: auto;
   border-radius: 4px;
-  border-bottom: 4px solid #a7a7a7
+  border-bottom: 4px solid #a7a7a7;
 }
 #name,
 #usermsg {
   border-radius: 4px;
-  border: 1px solid #ff9800
+  border: 1px solid #ff9800;
 }
 #usermsg {
-  flex: 1
+  flex: 1;
 }
 #name {
-  padding: 2px 8px
+  padding: 2px 8px;
 }
 #enter,
 #submitmsg,
 a#exit {
   border-radius: 4px;
-  font-weight: 700
+  font-weight: 700;
 }
 #enter,
 #submitmsg {
   background: #ff9800;
   border: 2px solid #e65100;
   color: #fff;
-  padding: 4px 10px
+  padding: 4px 10px;
 }
 .error {
-  color: red
+  color: red;
 }
 #menu {
   padding: 15px 25px;
-  display: flex
+  display: flex;
 }
 #menu p.welcome {
-  flex: 1
+  flex: 1;
 }
 a#exit {
   background: #c62828;
-  padding: 4px 8px
+  padding: 4px 8px;
 }
 .msgln {
-  margin: 0 0 5px
+  margin: 0 0 5px;
 }
 .msgln span.join-info,
 .msgln span.left-info,
 a#exit {
-  color: #fff
+  color: #fff;
 }
 .msgln span.chat-time {
   color: gold;
-  vertical-align: super
+  vertical-align: super;
 }
 .msgln b.user-name-join,
 .msgln b.user-name-left {
@@ -113,11 +113,11 @@ a#exit {
   padding: 2px 4px;
   font-size: 90%;
   border-radius: 4px;
-  margin: 0 5px 0 0
+  margin: 0 5px 0 0;
 }
 .msgln b.user-name-left {
-  background: red
+  background: red;
 }
 .msgln b.user-name-join {
-  background: #1eff00
+  background: #1eff00;
 }
