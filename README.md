@@ -1,7 +1,7 @@
 # ChatBoxPHP
 PHP based Chatbox
 
-![License](https://img.shields.io/github/license/UltraStudioLTD/ChatBoxPHP)
+![GitHub](https://img.shields.io/github/license/UltraStudioLTD/ChatBoxPHP?logo=gnu)
 ![GitHub repo size](https://img.shields.io/github/repo-size/UltraStudioLTD/ChatBoxPHP?logo=github)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/UltraStudioLTD/ChatBoxPHP?logo=github)
 ![GitHub language count](https://img.shields.io/github/languages/count/UltraStudioLTD/ChatBoxPHP?logo=github)
