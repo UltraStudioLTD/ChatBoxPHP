@@ -14,10 +14,10 @@ PHP based Chatbox from *UltraStudioLTD*
   - [x] 1 Room for Chatting
   - [x] Colored Join/Post/Exit messages
   - [x] No registration
-  - [x] Optimisation for Mobile Screens
 
 ## Planned Features
 
+  - [ ] Optimisation for Mobile Phones [In Building]
   - [ ] Improving Designs [In Building]
   - [ ] Make application faster [In Building]
   - [ ] Adding more Rooms [Planned]
@@ -30,11 +30,16 @@ PHP based Chatbox from *UltraStudioLTD*
   - [ ] Adding Secret Conversation [Planned]
   - [ ] Adding Encryption [Planned]
   - [ ] Adding Authentication [Planned]
+  
+### Web-Applications
 
-### [ChatBoxPHP web-application on Heroku](https://chatboxphp.herokuapp.com/)
-### [ChatBoxPHP web-application on Repl.it](https://chatboxphp-current.ultrastudioltd.repl.co/)
-### [ChatBoxPHP repository on Repl.it](https://repl.it/@UltraStudioLTD/ChatBoxPHP-CURRENT)
-### [ChatBoxPHP repository on Github](https://github.com/UltraStudioLTD/ChatBoxPHP.git/)
+<a href="https://chatboxphp.herokuapp.com/"><img src="https://simpleicons.org/icons/heroku.svg" width="50"/></a>
+<a href="https://repl.it/@UltraStudioLTD/ChatBoxPHP-CURRENT/"><img src="https://simpleicons.org/icons/repl-dot-it.svg" width="50"/></a>
+
+### Repositories
+
+<a href="https://chatboxphp-current.ultrastudioltd.repl.co/"><img src="https://simpleicons.org/icons/repl-dot-it.svg" width="50"/></a>
+<a href="https://github.com/UltraStudioLTD/ChatBoxPHP.git/"><img src="https://simpleicons.org/icons/github.svg" width="50"/></a>
 
 ![GitHub](https://img.shields.io/github/license/UltraStudioLTD/ChatBoxPHP?logo=gnu)
 ![GitHub repo size](https://img.shields.io/github/repo-size/UltraStudioLTD/ChatBoxPHP?logo=github)
@@ -48,7 +53,7 @@ PHP based Chatbox from *UltraStudioLTD*
 ![Code Climate issues](https://img.shields.io/codeclimate/issues/UltraStudioLTD/ChatBoxPHP?logo=code-climate)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c710729615254d2396ef4dfc939ae995)](https://app.codacy.com/gh/UltraStudioLTD/ChatBoxPHP?utm_source=github.com&utm_medium=referral&utm_content=UltraStudioLTD/ChatBoxPHP&utm_campaign=Badge_Grade)
 [![Gitter](https://img.shields.io/gitter/room/UltraStudioLTD/ChatBoxPHP?logo=gitter)](https://gitter.im/ChatBoxPHP/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-![Website](https://img.shields.io/website?down_color=red&down_message=Offline&logo=Heroku&up_color=green&up_message=Online&url=https%3A%2F%2Fchatboxphp.herokuapp.com%2F)(https://chatboxphp.herokuapp.com/)
+![Website](https://img.shields.io/website?down_color=red&down_message=Offline&logo=Heroku&up_color=green&up_message=Online&url=https%3A%2F%2Fchatboxphp.herokuapp.com%2F)
 ![Security Headers](https://img.shields.io/security-headers?logo=Heroku&url=https%3A%2F%2Fchatboxphp.herokuapp.com%2F)
 
 ![GitHub followers](https://img.shields.io/github/followers/UltraStudioLTD?label=Follow&style=social)
