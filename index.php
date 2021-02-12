@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>PHP Test</title>
+    <title>ChatBoxPHP</title>
   </head>
   <body>
     <?php
