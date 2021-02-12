@@ -110,24 +110,10 @@ function loginForm(){
                 $("#exit").click(function() {
                     var exit = confirm("Are you sure you want to end the session?");
                     if (exit == true) {
-                        window.removeEventListener('beforeunload', function(e) {
-                            e.preventDefault();
-                            e.returnValue = '';
-                            window.location = "index.php?logout=true";
-                        });
-                        var clear = confirm("Do you want to clear Chat History?");
-                        if (clear == true) {
-                            window.location = "clear.php";
-                        } else {
-                            window.location = "index.php?logout=true";
-                        };
+                      window.location = "index.php?logout=true";
                     };
                 });
-                window.addEventListener('beforeunload', function (e) {
-                    e.preventDefault();
-                    e.returnValue = '';
-                    window.location = "index.php?logout=true";
-                });
+ 
             });
         </script>
     </body>
