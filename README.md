@@ -2,42 +2,39 @@
 
 PHP based Chatbox from *UltraStudioLTD*
 
-
 > Please Note that Currently I don't have any Encryption method implemented and
 > Project is still in building process.
 > I won't be responsible for any damage caused by Application So use it with your own risk!
 > Please remember, that I am will continue improving Project when I will have free time.
 
-# Current Features
+## Current Features
 
-  - [x] Desktop only
-  - [x] Online Web Application
-  - [x] 1 Room for Chatting
-  - [x] Colored Join/Post/Exit messages
-  - [x] No registration
+- [x] Desktop only
+- [x] Online Web Application
+- [x] 1 Room for Chatting
+- [x] Colored Join/Post/Exit messages
+- [x] No registration
+- [x] Optimisation for Mobile Screens
 
+## Planned Features
 
-# Planned Features
+- [ ] Improving Designs [In Building]
+- [ ] Make application faster [In Building]
+- [ ] Adding more Rooms [Planned]
+- [ ] Adding Customization [Planned]
+- [ ] Adding Voice Messages [Planned]
+- [ ] Adding Media (Images, GIF, Videos) Messages [Planned]
+- [ ] Adding Voice Chat [Planned]
+- [ ] Adding Video Chat [Planned]
+- [ ] Adding Private Chat [Planned]
+- [ ] Adding Secret Conversation [Planned]
+- [ ] Adding Encryption [Planned]
+- [ ] Adding Authentication [Planned]
 
-  - [ ] Optimisation for Mobile Phones [In Building]
-  - [ ] Improving Designs [In Building]
-  - [ ] Make application faster [In Building]
-  - [ ] Adding more Rooms [Planned]
-  - [ ] Adding Customization [Planned]
-  - [ ] Adding Voice Messages [Planned]
-  - [ ] Adding Media (Images, GIF, Videos) Messages [Planned]
-  - [ ] Adding Voice Chat [Planned]
-  - [ ] Adding Video Chat [Planned]
-  - [ ] Adding Private Chat [Planned]
-  - [ ] Adding Secret Conversation [Planned]
-  - [ ] Adding Encryption [Planned]
-  - [ ] Adding Authentication [Planned]
-
-## [ChatBoxPHP web-application on Heroku](https://chatboxphp.herokuapp.com/)
-## [ChatBoxPHP web-application on Repl.it](https://chatboxphp-current.ultrastudioltd.repl.co/)
-## [ChatBoxPHP repository on Repl.it](https://repl.it/@UltraStudioLTD/ChatBoxPHP-CURRENT)
-## [ChatBoxPHP repository on Github](https://github.com/UltraStudioLTD/ChatBoxPHP.git/)
-
+### [ChatBoxPHP web-application on Heroku](https://chatboxphp.herokuapp.com/)
+### [ChatBoxPHP web-application on Repl.it](https://chatboxphp-current.ultrastudioltd.repl.co/)
+### [ChatBoxPHP repository on Repl.it](https://repl.it/@UltraStudioLTD/ChatBoxPHP-CURRENT)
+### [ChatBoxPHP repository on Github](https://github.com/UltraStudioLTD/ChatBoxPHP.git/)
 
 ![GitHub](https://img.shields.io/github/license/UltraStudioLTD/ChatBoxPHP?logo=gnu)
 ![GitHub repo size](https://img.shields.io/github/repo-size/UltraStudioLTD/ChatBoxPHP?logo=github)
@@ -58,7 +55,6 @@ PHP based Chatbox from *UltraStudioLTD*
 ![GitHub forks](https://img.shields.io/github/forks/UltraStudioLTD/ChatBoxPHP?label=Fork&style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/UltraStudioLTD/ChatBoxPHP?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/UltraStudioLTD/ChatBoxPHP?label=Watch&style=social)
-
 
 <img src="https://www.php.net/images/logos/new-php-logo.svg" width="250"/>
 <img src="https://cdn.worldvectorlogo.com/logos/heroku.svg" width="250"/>
