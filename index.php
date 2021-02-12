@@ -34,7 +34,6 @@ function loginForm(){
     '<div id="loginform">
     <p>Please enter your name to continue!</p>
     <form action="index.php" method="post">
-      <label for="name">Name &mdash;</label>
       <input type="text" name="name" id="name"  minlength="1" maxlength="32" title="Enter Name" required/>
       <input type="submit" name="enter" id="enter" value="Enter" title="Submit Name"/>
     </form>
