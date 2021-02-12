@@ -9,27 +9,27 @@ PHP based Chatbox from *UltraStudioLTD*
 
 ## Current Features
 
-- [x] Desktop only
-- [x] Online Web Application
-- [x] 1 Room for Chatting
-- [x] Colored Join/Post/Exit messages
-- [x] No registration
-- [x] Optimisation for Mobile Screens
+  - [x] Desktop only
+  - [x] Online Web Application
+  - [x] 1 Room for Chatting
+  - [x] Colored Join/Post/Exit messages
+  - [x] No registration
+  - [x] Optimisation for Mobile Screens
 
 ## Planned Features
 
-- [ ] Improving Designs [In Building]
-- [ ] Make application faster [In Building]
-- [ ] Adding more Rooms [Planned]
-- [ ] Adding Customization [Planned]
-- [ ] Adding Voice Messages [Planned]
-- [ ] Adding Media (Images, GIF, Videos) Messages [Planned]
-- [ ] Adding Voice Chat [Planned]
-- [ ] Adding Video Chat [Planned]
-- [ ] Adding Private Chat [Planned]
-- [ ] Adding Secret Conversation [Planned]
-- [ ] Adding Encryption [Planned]
-- [ ] Adding Authentication [Planned]
+  - [ ] Improving Designs [In Building]
+  - [ ] Make application faster [In Building]
+  - [ ] Adding more Rooms [Planned]
+  - [ ] Adding Customization [Planned]
+  - [ ] Adding Voice Messages [Planned]
+  - [ ] Adding Media (Images, GIF, Videos) Messages [Planned]
+  - [ ] Adding Voice Chat [Planned]
+  - [ ] Adding Video Chat [Planned]
+  - [ ] Adding Private Chat [Planned]
+  - [ ] Adding Secret Conversation [Planned]
+  - [ ] Adding Encryption [Planned]
+  - [ ] Adding Authentication [Planned]
 
 ### [ChatBoxPHP web-application on Heroku](https://chatboxphp.herokuapp.com/)
 ### [ChatBoxPHP web-application on Repl.it](https://chatboxphp-current.ultrastudioltd.repl.co/)
