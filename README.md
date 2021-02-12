@@ -9,7 +9,7 @@ PHP based Chatbox from *UltraStudioLTD*
 
 ## Current Features
 
-  - [x] Desktop only
+  - [x] Web-only
   - [x] Online Web Application
   - [x] 1 Room for Chatting
   - [x] Colored Join/Post/Exit messages
@@ -17,7 +17,7 @@ PHP based Chatbox from *UltraStudioLTD*
 
 ## Planned Features
 
-  - [ ] Optimisation for Mobile Phones [In Building]
+  - [X] Optimisation for Mobile Phones [Partially Finished]
   - [ ] Improving Designs [In Building]
   - [ ] Make application faster [In Building]
   - [ ] Adding more Rooms [Planned]
