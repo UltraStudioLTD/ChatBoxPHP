@@ -34,8 +34,7 @@ function loginForm(){
     '<div id="loginform">
     <p>Please enter your name to continue!</p>
     <form action="index.php" method="post">
-      <label for="name">Name &mdash;</label>
-      <input type="text" name="name" id="name"  minlength="1" maxlength="32" title="Enter Name" required/>
+      <input type="text" name="name" id="name"  minlength="1" maxlength="32" placeholder="Please Enter your Name" title="Enter Name" required/>
       <input type="submit" name="enter" id="enter" value="Enter" title="Submit Name"/>
     </form>
   </div>';
@@ -81,7 +80,7 @@ function loginForm(){
                 <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
             </form>
         </div>
-        <footer>
+        <footer style="position: absolute; bottom: 0">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
                 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/3.0/88x31.png" />
             </a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
@@ -99,29 +98,35 @@ function loginForm(){
  
                 function loadLog() {
                     var oldscrollHeight = $("#chatbox")[0].scrollHeight - 20; //Scroll height before the request
- 
                     $.ajax({
                         url: "log.html",
                         cache: false,
                         success: function (html) {
                             $("#chatbox").html(html); //Insert chat log into the #chatbox div
- 
                             //Auto-scroll           
                             var newscrollHeight = $("#chatbox")[0].scrollHeight - 20; //Scroll height after the request
                             if(newscrollHeight > oldscrollHeight){
                                 $("#chatbox").animate({ scrollTop: newscrollHeight }, 'normal'); //Autoscroll to bottom of div
-                            }   
-                        }
+                            }; 
+                        };
                     });
-                }
- 
+                };
                 setInterval (loadLog, 2500);
- 
-                $("#exit").click(function () {
+                $("#exit").click(function() {
                     var exit = confirm("Are you sure you want to end the session?");
                     if (exit == true) {
-                    window.location = "index.php?logout=true";
-                    }
+                        window.removeEventListener('beforeunload', function(e) {
+                            e.preventDefault();
+                            e.returnValue = '';
+                            window.location = "index.php?logout=true";
+                        });
+                        var clear = confirm("Do you want to clear Chat History?");
+                        if (clear == true) {
+                            window.location = "clear.php";
+                        } else {
+                            window.location = "index.php?logout=true";
+                        };
+                    };
                 });
                 window.addEventListener('beforeunload', function (e) {
                     e.preventDefault();
