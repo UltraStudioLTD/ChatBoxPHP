@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>ChatBoxPHP</title>
+    <title>PHP Test</title>
   </head>
   <body>
     <?php
@@ -10,7 +10,7 @@ session_start();
 if(isset($_GET['logout'])){    
     //Simple exit message
     date_default_timezone_set('UTC');
-    $logout_message = "<div class='msgln'>⇒⇒ <span class='chat-time'>".date("Y-m-d H:i:s")."</span> ➥ <span class='left-info'><b class='user-name-left'>". $_SESSION['name'] ."</b> has left the chat session.</span><br></div>";
+    $logout_message = "<div class='msgln'>⇒⇒ <span class='chat-time'>".date("Y-m-d H:i:s")."</span> ➥ <span class='left-info'><b class='user-name-left'>". $_SESSION['name'] ."</b style='color: red'> has left the chat session.</span><br></div>";
     file_put_contents("log.html", $logout_message, FILE_APPEND | LOCK_EX);
      
     session_destroy();
@@ -21,7 +21,7 @@ if(isset($_POST['enter'])){
     if($_POST['name'] != ""){
         $_SESSION['name'] = stripslashes(htmlspecialchars($_POST['name']));
         date_default_timezone_set('UTC');
-        $join_message = "<div class='msgln'>⇒⇒ <span class='chat-time' style='color: green'>".date("Y-m-d H:i:s")."</span> ➥ <span class='join-info'><b class='user-name-join'>". $_SESSION['name'] ."</b> has joined the chat session.</span><br></div>";
+        $join_message = "<div class='msgln'>⇒⇒ <span class='chat-time' style='color: green'>".date("Y-m-d H:i:s")."</span> ➥ <span class='join-info'><b class='user-name-join'>". $_SESSION['name'] ."</b style='color: green'> has joined the chat session.</span><br></div>";
         file_put_contents("log.html", $join_message, FILE_APPEND | LOCK_EX);
     }
     else{
@@ -34,8 +34,9 @@ function loginForm(){
     '<div id="loginform">
     <p>Please enter your name to continue!</p>
     <form action="index.php" method="post">
-      <input type="text" name="name" id="name" minlength="1" maxlength="32"/>
-      <input type="submit" name="enter" id="enter" value="Enter"/>
+      <label for="name">Name &mdash;</label>
+      <input type="text" name="name" id="name"  minlength="1" maxlength="32" title="Enter Name" required/>
+      <input type="submit" name="enter" id="enter" value="Enter" title="Submit Name"/>
     </form>
   </div>';
 }
@@ -75,12 +76,12 @@ function loginForm(){
             ?>
             </div>
  
-            <form name="message" action="" onsubmit="preventDefault()">
-                <input name="usermsg" type="text" id="usermsg" />
+            <form name="message" action="">
+                <input name="usermsg" type="text" id="usermsg" minlength="1"/>
                 <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
             </form>
         </div>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript">
             // jQuery Document
             $(document).ready(function () {
@@ -93,27 +94,35 @@ function loginForm(){
  
                 function loadLog() {
                     var oldscrollHeight = $("#chatbox")[0].scrollHeight - 20; //Scroll height before the request
+ 
                     $.ajax({
                         url: "log.html",
                         cache: false,
                         success: function (html) {
                             $("#chatbox").html(html); //Insert chat log into the #chatbox div
+ 
                             //Auto-scroll           
                             var newscrollHeight = $("#chatbox")[0].scrollHeight - 20; //Scroll height after the request
                             if(newscrollHeight > oldscrollHeight){
                                 $("#chatbox").animate({ scrollTop: newscrollHeight }, 'normal'); //Autoscroll to bottom of div
-                            }; 
-                        };
+                            }   
+                        }
                     });
-                };
+                }
+ 
                 setInterval (loadLog, 2500);
-                $("#exit").click(function() {
+ 
+                $("#exit").click(function () {
                     var exit = confirm("Are you sure you want to end the session?");
                     if (exit == true) {
-                      window.location = "index.php?logout=true";
-                    };
+                    window.location = "index.php?logout=true";
+                    }
                 });
- 
+                window.addEventListener('beforeunload', function (e) {
+                    e.preventDefault();
+                    e.returnValue = '';
+                    window.location = "index.php?logout=true";
+                });
             });
         </script>
     </body>
