@@ -34,8 +34,8 @@ function loginForm(){
     '<div id="loginform">
     <p>Please enter your name to continue!</p>
     <form action="index.php" method="post">
-      <input type="text" name="name" id="name"  minlength="1" maxlength="32" placeholder="Please Enter your Name" title="Enter Name" required/>
-      <input type="submit" name="enter" id="enter" value="Enter" title="Submit Name"/>
+      <input type="text" name="name" id="name" minlength="1" maxlength="32"/>
+      <input type="submit" name="enter" id="enter" value="Enter"/>
     </form>
   </div>';
 }
@@ -75,7 +75,7 @@ function loginForm(){
             ?>
             </div>
  
-            <form name="message" action="">
+            <form name="message" action="" onsubmit="preventDefault()">
                 <input name="usermsg" type="text" id="usermsg" />
                 <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
             </form>
