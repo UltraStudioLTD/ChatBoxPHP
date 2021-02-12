@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>PHP Test</title>
+    <title>ChatBoxPHP</title>
   </head>
   <body>
     <?php
@@ -10,7 +10,7 @@ session_start();
 if(isset($_GET['logout'])){    
     //Simple exit message
     date_default_timezone_set('UTC');
-    $logout_message = "<div class='msgln'>⇒⇒ <span class='chat-time'>".date("Y-m-d H:i:s")."</span> ➥ <span class='left-info'><b class='user-name-left'>". $_SESSION['name'] ."</b style='color: red'> has left the chat session.</span><br></div>";
+    $logout_message = "<div class='msgln'><span class='chat-time' style='background-color: red'>".date("Y-m-d H:i:s")."</span> ➥ <span class='left-info'><b class='user-name-left'>". $_SESSION['name'] ."</b style='color: red'> has left the chat session.</span><br></div>";
     file_put_contents("log.html", $logout_message, FILE_APPEND | LOCK_EX);
      
     session_destroy();
@@ -21,7 +21,7 @@ if(isset($_POST['enter'])){
     if($_POST['name'] != ""){
         $_SESSION['name'] = stripslashes(htmlspecialchars($_POST['name']));
         date_default_timezone_set('UTC');
-        $join_message = "<div class='msgln'>⇒⇒ <span class='chat-time' style='color: green'>".date("Y-m-d H:i:s")."</span> ➥ <span class='join-info'><b class='user-name-join'>". $_SESSION['name'] ."</b style='color: green'> has joined the chat session.</span><br></div>";
+        $join_message = "<div class='msgln'><span class='chat-time' style='background-color: green'>".date("Y-m-d H:i:s")."</span> ➥ <span class='join-info'><b class='user-name-join'>". $_SESSION['name'] ."</b style='color: green'> has joined the chat session.</span><br></div>";
         file_put_contents("log.html", $join_message, FILE_APPEND | LOCK_EX);
     }
     else{
