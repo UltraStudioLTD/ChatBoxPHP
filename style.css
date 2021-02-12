@@ -121,8 +121,6 @@ a#exit {
   margin: 0 0 5px;
 }
 
-.msgln span.join-info,
-.msgln span.left-info,
 a#exit {
   color: #fff;
 }
@@ -148,4 +146,12 @@ a#exit {
 
 .msgln b.user-name-join {
   background: #1eff00;
+}
+
+.msgln span.join-info {
+    color: #1eff00;
+}
+
+.msgln span.left-info {
+    color: red;
 }
