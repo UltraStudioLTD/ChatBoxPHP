@@ -126,8 +126,12 @@ a#exit {
 }
 
 .msgln span.chat-time {
-  color: gold;
-  vertical-align: super;
+  color: white;
+  font-weight: 700;
+  padding: 2px 4px;
+  font-size: 90%;
+  border-radius: 4px;
+  margin: 0 5px 0 0;
 }
 
 .msgln b.user-name-join,
@@ -149,9 +153,9 @@ a#exit {
 }
 
 .msgln span.join-info {
-    color: #1eff00;
+  color: #1eff00;
 }
 
 .msgln span.left-info {
-    color: red;
+  color: red;
 }
