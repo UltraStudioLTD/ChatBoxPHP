@@ -33,7 +33,14 @@ if(isset($_GET['logout'])){
     session_destroy();
     header("Location: index.php"); //Redirect the user
 }
- 
+
+if(isset($_GET['forcelogout'])){    
+    date_default_timezone_set('UTC');
+    $logout_message = "<div class='msgln'><span class='chat-time' style='background-color: red'>".date("Y-m-d H:i:s")."</span> ➥ <span class='left-info'><b class='user-name-left'>". $_SESSION['name'] ."</b style='color: red'> has left the chat session.</span><br></div>";
+    file_put_contents("log.html", $logout_message, FILE_APPEND | LOCK_EX);
+    session_destroy();
+}
+
 if(isset($_POST['enter'])){
     if($_POST['name'] != ""){
         $_SESSION['name'] = stripslashes(htmlspecialchars($_POST['name']));
@@ -151,10 +158,13 @@ function loginForm(){
                     window.location = "index.php?logout=true";
                     }
                 });
-                window.addEventListener('beforeunload', function (e) {
-                    e.preventDefault();
-                    e.returnValue = '';
-                    window.location = "index.php?logout=true";
+                // window.addEventListener('beforeunload', function (e) {
+                //     e.preventDefault();
+                //     e.returnValue = '';
+                //     $.ajax({url: 'index.php?forcelogout=true'});
+                // });
+                $(window).bind("beforeunload", function() {
+                    $.ajax({url: 'index.php?forcelogout=true'});
                 });
             });
         </script>
@@ -165,4 +175,3 @@ function loginForm(){
 ?> 
   </body>
 </html>
-
