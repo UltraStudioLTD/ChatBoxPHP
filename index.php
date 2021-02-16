@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -115,10 +115,14 @@ function loginForm(){
             }
             ?>
             </div>
- 
+            
             <form name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" minlength="1"/>
                 <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+            </form>
+            <form name="form" method="post" action="upload.php" enctype="multipart/form-data">
+                <input type="file" name="my_file" /><br /><br />
+                <input type="submit" name="submit" value="Upload"/>
             </form>
         </div>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -158,11 +162,6 @@ function loginForm(){
                     window.location = "index.php?logout=true";
                     }
                 });
-                // window.addEventListener('beforeunload', function (e) {
-                //     e.preventDefault();
-                //     e.returnValue = '';
-                //     $.ajax({url: 'index.php?forcelogout=true'});
-                // });
                 $(window).bind("beforeunload", function() {
                     $.ajax({url: 'index.php?forcelogout=true'});
                 });
