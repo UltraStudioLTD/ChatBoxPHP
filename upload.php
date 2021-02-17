@@ -19,11 +19,13 @@ if(isset($_SESSION['name'])){
     $file_type = $_FILES['my_file']['type'];
     $path_filename_ext = $target_dir.$filename.".".$ext;
     $imageExtension = array('jpg', 'JPG', 'png', 'PNG', 'jpeg', 'JPEG', 'gif', 'GIF', 'svg', 'SVG', 'webp', 'WEBP');
+    $codeExtension = array('json', 'JSON', 'xml', 'XML', 'html', 'HTML', 'css', 'CSS', 'js', 'JS', 'sh', 'SH', 'c#', 'C#', 'c++', 'C++', 'c', 'C', 'php', 'PHP', 'py', 'PY');
     $isImage = false;
+    $isCode = false;
     if (in_array($ext, $imageExtension)) {
         $isImage = true;
-    } else {
-        $isImage = false;
+    } elseif (in_array($ext, $codeExtension)){
+        $isCode = true;
     };
     // Check if file already exists
     if (file_exists($path_filename_ext)) {
@@ -32,7 +34,9 @@ if(isset($_SESSION['name'])){
         move_uploaded_file($temp_name,$path_filename_ext);
         if ($isImage == true) {
             $file_message = "<div class='msgln'><span class='chat-time' style='background-color: black; color: gold'>".date("Y-m-d H:i:s")."</span> ➥ <b class='user-name' style='font-weight: bold; background: black; color: yellow; padding: 2px 4px; font-size: 90%; border-radius: 4px; margin: 0 5px 0 0;'>".$_SESSION['name']."</b><img src='".$path_filename_ext."'/></div>";
-        } elseif ($isImage == false) {
+        } elseif ($isCode == true) {
+            $file_message = "<div class='msgln'><span class='chat-time' style='background-color: black; color: gold'>".date("Y-m-d H:i:s")."</span> ➥ <b class='user-name' style='font-weight: bold; background: black; color: yellow; padding: 2px 4px; font-size: 90%; border-radius: 4px; margin: 0 5px 0 0;'>".$_SESSION['name']."</b>Download File:  <a href='".$path_filename_ext."' download/>".$filename.".".$ext."</a></div><br><pre><code>".file_get_contents($path_filename_ext)."</code></pre>";
+        } else {
             $file_message = "<div class='msgln'><span class='chat-time' style='background-color: black; color: gold'>".date("Y-m-d H:i:s")."</span> ➥ <b class='user-name' style='font-weight: bold; background: black; color: yellow; padding: 2px 4px; font-size: 90%; border-radius: 4px; margin: 0 5px 0 0;'>".$_SESSION['name']."</b>Download File:  <a href='".$path_filename_ext."' download/>".$filename.".".$ext."</a></div>";
         };
         file_put_contents("log.html", $file_message, FILE_APPEND | LOCK_EX);
@@ -40,8 +44,10 @@ if(isset($_SESSION['name'])){
         move_uploaded_file($temp_name,$path_filename_ext);
         if ($isImage == true) {
             $file_message = "<div class='msgln'><span class='chat-time' style='background-color: black; color: gold'>".date("Y-m-d H:i:s")."</span> ➥ <b class='user-name' style='font-weight: bold; background: black; color: yellow; padding: 2px 4px; font-size: 90%; border-radius: 4px; margin: 0 5px 0 0;'>".$_SESSION['name']."</b><img src='".$path_filename_ext."'/></div>";
-        } elseif ($isImage == false) {
-            $file_message = "<div class='msgln'><span class='chat-time' style='background-color: black; color: gold'>".date("Y-m-d H:i:s")."</span> ➥ <b class='user-name' style='font-weight: bold; background: black; color: yellow; padding: 2px 4px; font-size: 90%; border-radius: 4px; margin: 0 5px 0 0;'>".$_SESSION['name']."</b>Download File:  <a href='".$path_filename_ext."' download/>".$filename.".".$ext."</a></div>";
+        } elseif ($isCode == true) {
+            $file_message = "<div class='msgln'><span class='chat-time' style='background-color: black; color: gold'>".date("Y-m-d H:i:s")."</span> ➥ <b class='user-name' style='font-weight: bold; background: black; color: yellow; padding: 2px 4px; font-size: 90%; border-radius: 4px; margin: 0 5px 0 0;'>".$_SESSION['name']."</b>Download File:  <a href='".$path_filename_ext."' download/>".$filename.".".$ext."</a></div><br><code class='prettyprint'>".file_get_contents($path_filename_ext)."</code>";
+        } else {
+            $file_message = "<div class='msgln'><span class='chat-time' style='background-color: black; color: gold'>".date("Y-m-d H:i:s")."</span> ➥ <b class='user-name' style='font-weight: bold; background: black; color: yellow; padding: 2px 4px; font-size: 90%; border-radius: 4px; margin: 0 5px 0 0;'>".$_SESSION['name']."</b>Download File:  <a href='".$path_filename_ext."' download/>".$filename.".".$ext."</a></div><br><pre><code>".file_get_contents($path_filename_ext)."</code></pre>";
         };
         file_put_contents("log.html", $file_message, FILE_APPEND | LOCK_EX);
     };
