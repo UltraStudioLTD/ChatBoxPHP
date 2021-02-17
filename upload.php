@@ -13,6 +13,10 @@ if(isset($_SESSION['name'])){
     };
 
     $target_dir = "upload/";
+    
+    if (!file_exists($target_dir)) {
+        mkdir($target_dir, 0777, true);
+    }
 
     $file = $_FILES['my_file']['name'];
 
